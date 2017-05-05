@@ -1,16 +1,22 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-import { AppComponent } from './app.component';
+
+import { OptionsComponent } from './options/options.component';
+import { ButtonsComponent } from './buttons.component';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'buttons',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: AppComponent
+    path: 'buttons',
+    component: ButtonsComponent
+  },
+  {
+    path: 'options',
+    component: OptionsComponent
   }
 ];
 
