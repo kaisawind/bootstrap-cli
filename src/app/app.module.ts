@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { ButtonsModule } from './buttons/buttons.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { SidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     HttpModule,
     ButtonsModule,
     DashboardModule,
+    SidebarModule,
     routing
   ],
   providers: [],

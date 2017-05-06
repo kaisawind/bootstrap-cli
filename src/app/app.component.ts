@@ -1,4 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
