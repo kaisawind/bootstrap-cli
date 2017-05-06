@@ -9,7 +9,7 @@ import { ButtonsModule } from './buttons/buttons.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
