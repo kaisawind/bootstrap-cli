@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { ButtonsModule } from './buttons/buttons.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ButtonsModule } from './buttons/buttons.module';
     FormsModule,
     HttpModule,
     ButtonsModule,
+    DashboardModule,
     routing
   ],
   providers: [],

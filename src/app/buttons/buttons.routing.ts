@@ -6,17 +6,14 @@ import { ButtonsComponent } from './buttons.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'buttons',
-    pathMatch: 'full'
-  },
-  {
     path: 'buttons',
-    component: ButtonsComponent
-  },
-  {
-    path: 'options',
-    component: OptionsComponent
+    component: ButtonsComponent,
+    children: [
+      {
+        path: 'options',
+        component: OptionsComponent
+      },
+    ]
   }
 ];
 
