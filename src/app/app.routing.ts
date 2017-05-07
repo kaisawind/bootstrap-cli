@@ -25,6 +25,10 @@ export const routes: Routes = [
     loadChildren: 'app/sidebar/sidebar.module#SidebarModule'
   },
   {
+    path: 'specialcharacter',
+    loadChildren: 'app/html/html.module#HtmlModule'
+  },
+  {
     path: '**',
     redirectTo: '/'
   }

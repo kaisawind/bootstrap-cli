@@ -1,4 +1,9 @@
-<accordion-group heading="预定义样式">
+<accordion-group #group>
+  <div accordion-heading>
+    预定义样式
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
   使用下面列出的类可以快速创建一个带有预定义样式的按钮。
   <div class="table-responsive">
     <table class="table table-bordered table-striped">

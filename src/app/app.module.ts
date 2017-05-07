@@ -10,6 +10,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { ShareModule } from './share/share.module';
 import { CoreModule } from './core/core.module';
+import { HtmlModule } from './html/html.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CoreModule } from './core/core.module';
     SidebarModule,
     ShareModule,
     CoreModule,
+    HtmlModule,
     routing
   ],
   providers: [],

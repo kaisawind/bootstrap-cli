@@ -1,4 +1,9 @@
-<accordion-group heading="可作为按钮使用的标签或元素">
+<accordion-group #group>
+  <div accordion-heading>
+    可作为按钮使用的标签或元素
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
   为 <code>&lt;a&gt;</code>、<code>&lt;button&gt;</code> 或 <code>&lt;input&gt;</code> 元素添加按钮类（button class）即可使用 Bootstrap 提供的样式。
   <app-samplebox [html]="docs.types.html">
     <a class="btn btn-default" href="#" role="button">Link</a>
