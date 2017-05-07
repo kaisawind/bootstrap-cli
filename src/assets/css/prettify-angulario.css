@@ -13,9 +13,7 @@
   border-radius: 4px;
 }
 
-.prettyprint .linenums,
-.prettyprint[class^="linenums:"],
-.prettyprint[class*=" linenums:"] {
+.linenums {
   padding: 0
 }
 

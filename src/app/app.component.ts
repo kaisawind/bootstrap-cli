@@ -35,7 +35,8 @@ export class AppComponent implements AfterContentInit {
       const pres = document.getElementsByTagName('pre');
       for (let i = 0; i < pres.length; i++) {
         if (pres[i].classList.contains('prettyprint') === false) {
-          pres[i].className += ' ' + 'prettyprint' + ' ' +  'linenums';
+          // pres[i].className += ' ' + 'prettyprint' + ' ' +  'linenums';
+          pres[i].className += ' ' + 'prettyprint';
         }
       }
       // google code-prettify

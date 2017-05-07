@@ -8,6 +8,8 @@ import { routing } from './app.routing';
 import { ButtonsModule } from './buttons/buttons.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { ShareModule } from './share/share.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SidebarModule } from './sidebar/sidebar.module';
     ButtonsModule,
     DashboardModule,
     SidebarModule,
+    ShareModule,
+    CoreModule,
     routing
   ],
   providers: [],

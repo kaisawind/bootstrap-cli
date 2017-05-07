@@ -48,11 +48,6 @@
   </table>
 </div>
 
-<div [innerHtml]="buttonDoc"></div>
-
-<pre class="prettyprint linenums">
-Many
-lines
-of
-code
-</pre>
+<app-samplebox [ts]="docs.basic.component" [html]="docs.basic.html">
+  This is ng-content.
+</app-samplebox>

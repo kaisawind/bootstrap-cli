@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// webpack html imports
-const titleDoc = require('html-loader!markdown-loader!./docs/usage.md');
+import { DOCS } from '../docs/docs';
 
 @Component({
   selector: 'app-options',
@@ -10,7 +9,7 @@ const titleDoc = require('html-loader!markdown-loader!./docs/usage.md');
 })
 export class OptionsComponent implements OnInit {
 
-  public buttonDoc: string = titleDoc;
+  public docs: any = DOCS;
 
   constructor() { }
 
