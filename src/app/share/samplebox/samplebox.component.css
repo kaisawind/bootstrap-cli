@@ -1,0 +1,133 @@
+/* bootstrap doc styles */
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border: solid #f7f7f9;
+  border-width: .2rem 0 0;
+}
+
+.bd-example:before {
+  content: "实例：";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 576px) {
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem;
+  }
+}
+
+.bd-example + .highlight,
+.bd-example + .clipboard + .highlight {
+  margin-top: 0;
+}
+
+.bd-example + p {
+  margin-top: 2rem;
+}
+
+.bd-example .container {
+  width: auto;
+}
+
+.bd-example > .form-control + .form-control {
+  margin-top: .5rem;
+}
+
+.bd-example > .card {
+  max-width: 20rem;
+}
+
+.bd-example > .nav + .nav,
+.bd-example > .alert + .alert,
+.bd-example > .navbar + .navbar,
+.bd-example > .progress + .progress,
+.bd-example > .progress + .btn {
+  margin-top: 1rem;
+}
+
+.bd-example > .dropdown-menu:first-child {
+  position: static;
+  display: block;
+}
+
+.bd-example > .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.bd-example > .close {
+  float: none;
+}
+
+.bd-example > img + img {
+  margin-left: .5rem;
+}
+
+.bd-example > .btn-group {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.bd-example > .btn-toolbar + .btn-toolbar {
+  margin-top: .5rem;
+}
+
+.bd-example > textarea.form-control {
+  resize: vertical;
+}
+
+.bd-example > .list-group {
+  max-width: 400px;
+}
+
+.bd-example .navbar-fixed-top {
+  position: static;
+  margin: -1rem -1rem 1rem;
+}
+
+.bd-example .navbar-fixed-bottom {
+  position: static;
+  margin: 1rem -1rem -1rem;
+}
+
+@media (min-width: 576px) {
+  .bd-example .navbar-fixed-top {
+    margin: -1.5rem -1.5rem 1rem;
+  }
+  .bd-example .navbar-fixed-bottom {
+    margin: 1rem -1.5rem -1.5rem;
+  }
+}
+
+.bd-example .pagination {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.bd-example > .dropdown > .dropdown-toggle {
+  float: left;
+}
+
+.bd-example > .dropdown > .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: .25rem;
+  clear: left;
+}
+
+.bd-example > .bg-primary:not(.navbar),
+.bd-example > .bg-success:not(.navbar),
+.bd-example > .bg-info:not(.navbar),
+.bd-example > .bg-warning:not(.navbar),
+.bd-example > .bg-danger:not(.navbar),
+.bd-example > .bg-inverse:not(.navbar) {
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
