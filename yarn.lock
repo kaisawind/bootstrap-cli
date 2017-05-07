@@ -1990,6 +1990,10 @@ globule@^1.0.0:
     lodash "~4.16.4"
     minimatch "~3.0.2"
 
+google-code-prettify@^1.0.5:
+  version "1.0.5"
+  resolved "http://r.cnpmjs.org/google-code-prettify/download/google-code-prettify-1.0.5.tgz#9f477f224dbfa62372e5ef803a7e157410400084"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "http://r.cnpmjs.org/got/download/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"

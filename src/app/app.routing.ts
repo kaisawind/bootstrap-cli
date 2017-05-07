@@ -5,12 +5,28 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
     path: 'home',
     component: AppComponent
+  },
+  {
+    path: 'dashboard',
+    loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: 'buttons',
+    loadChildren: 'app/buttons/buttons.module#ButtonsModule'
+  },
+  {
+    path: 'sidebar',
+    loadChildren: 'app/sidebar/sidebar.module#SidebarModule'
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
 

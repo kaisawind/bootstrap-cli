@@ -7,6 +7,5 @@ import { AccordionModule } from 'ngx-bootstrap';
 @NgModule({
   imports: [AccordionModule.forRoot(),...]
 })
-export class AppModule(){} 
+export class AppModule(){}
 ```
-

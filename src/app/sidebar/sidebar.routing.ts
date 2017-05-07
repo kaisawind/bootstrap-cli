@@ -1,20 +1,13 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
+import { SidebarComponent } from './sidebar.component';
+
 export const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full'
-  },
-  {
-    path: 'dashboard',
-    loadChildren: 'app/sidebar/sidebar.module#SidebarModule'
-  },
-  {
-    path: 'buttons',
-    loadChildren: 'app/buttons/buttons.module#ButtonsModule'
+    path: 'sidebar',
+    component: SidebarComponent
   }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true });
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);
