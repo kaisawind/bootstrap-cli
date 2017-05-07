@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/google-code-prettify/bin/prettify.min.css",
+        "assets/css/prettify-angulario.css",
         "styles.css"
       ],
       "scripts": [
