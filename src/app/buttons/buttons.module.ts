@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionModule } from 'ngx-bootstrap';
+import { AccordionModule, CollapseModule } from 'ngx-bootstrap';
 
 import { OptionsComponent } from './options/options.component';
 import { routing } from './buttons.routing';
@@ -13,6 +13,7 @@ import { TypesComponent } from './types/types.component';
     CommonModule,
     ShareModule,
     AccordionModule.forRoot(),
+    CollapseModule.forRoot(),
     routing
   ],
   declarations: [
