@@ -8,7 +8,7 @@ import { routing } from './app.routing';
 import { ButtonsModule } from './buttons/buttons.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { SidebarModule } from './sidebar/sidebar.module';
-import { ShareModule } from './share/share.module';
+import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { HtmlModule } from './html/html.module';
 
@@ -23,7 +23,7 @@ import { HtmlModule } from './html/html.module';
     ButtonsModule,
     DashboardModule,
     SidebarModule,
-    ShareModule,
+    SharedModule,
     CoreModule,
     HtmlModule,
     routing

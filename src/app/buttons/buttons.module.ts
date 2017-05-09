@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionModule, CollapseModule } from 'ngx-bootstrap';
+import { AccordionModule } from 'ngx-bootstrap';
 
 import { OptionsComponent } from './options/options.component';
 import { routing } from './buttons.routing';
 import { ButtonsComponent } from './buttons.component';
-import { ShareModule } from '../share/share.module';
 import { TypesComponent } from './types/types.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    ShareModule,
     AccordionModule.forRoot(),
-    CollapseModule.forRoot(),
+    SharedModule,
     routing
   ],
   declarations: [
