@@ -1,0 +1,71 @@
+<accordion-group #group>
+  <div accordion-heading>
+    尺寸
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  需要让按钮具有不同尺寸吗？使用 <code>.btn-lg</code>、<code>.btn-sm</code>或<code>.btn-xs</code>就可以获得不同尺寸的按钮。
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Button</th>
+          <th>class=""</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button type="button" class="btn btn-primary btn-lg">Large button</button></td>
+          <td><code>btn btn-primary btn-lg</code></td>
+          <td>大按钮</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-default btn-lg">Large button</button></td>
+          <td><code>btn btn-default btn-lg</code></td>
+          <td>大按钮</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary">Default button</button></td>
+          <td><code>btn btn-primary</code></td>
+          <td>默认尺寸</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-default">Default button</button></td>
+          <td><code>btn btn-default</code></td>
+          <td>默认尺寸</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary btn-sm">Small button</button></td>
+          <td><code>btn btn-primary btn-sm</code></td>
+          <td>小按钮</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-default btn-sm">Small button</button></td>
+          <td><code>btn btn-default btn-sm</code></td>
+          <td>小按钮</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button></td>
+          <td><code>btn btn-primary btn-xs</code></td>
+          <td>超小尺寸</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button></td>
+          <td><code>btn btn-default btn-xs</code></td>
+          <td>超小尺寸</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button></td>
+          <td><code>btn btn-primary btn-lg btn-block</code></td>
+          <td>块级元素</td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-default btn-lg btn-block">Block level button</button></td>
+          <td><code>btn btn-primary btn-lg btn-block</code></td>
+          <td>块级元素</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</accordion-group>

@@ -7,6 +7,8 @@ import { routing } from './buttons.routing';
 import { ButtonsComponent } from './buttons.component';
 import { TypesComponent } from './types/types.component';
 import { SharedModule } from '../shared/shared.module';
+import { SizesComponent } from './sizes/sizes.component';
+import { StateComponent } from './state/state.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,9 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     OptionsComponent,
     ButtonsComponent,
-    TypesComponent
+    TypesComponent,
+    SizesComponent,
+    StateComponent
   ]
 })
 export class ButtonsModule { }
