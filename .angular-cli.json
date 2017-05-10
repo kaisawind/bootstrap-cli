@@ -18,9 +18,11 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
+      "styles": [        
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
         "assets/css/prettify-angulario.css",
+        "assets/css/buttons.css",
         "styles.css"
       ],
       "scripts": [

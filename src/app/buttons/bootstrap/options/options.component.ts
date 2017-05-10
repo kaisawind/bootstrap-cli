@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DOCS } from '../docs/docs';
+import { DOCS } from '../../docs/docs';
 
 @Component({
   selector: 'app-options',

@@ -26,3 +26,19 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## The Third Party
+
+* ngx-bootstrap [Github](https://github.com/valor-software/ngx-bootstrap)
+Native Angular directives for Bootstrap 3 and Bootstrap 4
+
+
+* BUTTONS [Github](https://github.com/alexwolfe/Buttons) [网站首页](http://www.bootcss.com/p/buttons/)
+Buttons 是一个高度可定制的、免费并且开源的按钮 CSS 样式库。
+
+## assets
+* assets/css/buttons.css
+Buttons 是一个高度可定制的、免费并且开源的按钮 CSS 样式库。
+
+* assets/css/prettify-angulario.css
+ngx-bootstrap的代码渲染css。

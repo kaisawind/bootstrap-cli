@@ -1,7 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { OptionsComponent } from './options/options.component';
 import { ButtonsComponent } from './buttons.component';
 
 export const routes: Routes = [
@@ -11,7 +10,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'options',
-        component: OptionsComponent
+        loadChildren: 'app/buttons/bootstrap/bootstrap.module#BootstrapModule'
       },
     ]
   }
