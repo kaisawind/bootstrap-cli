@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SizesComponent } from './sizes/sizes.component';
+import { AccordionModule } from 'ngx-bootstrap';
+
+import { SharedModule } from '../../shared/shared.module';
 import { FrameComponent } from './frame/frame.component';
 import { Button3dComponent } from './button3d/button3d.component';
 import { RaisedComponent } from './raised/raised.component';
@@ -10,15 +12,18 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { GroupComponent } from './group/group.component';
 import { BlockComponent } from './block/block.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
-import { FromComponent } from './from/from.component';
 import { TypeComponent } from './type/type.component';
+import { ShapeComponent } from './shape/shape.component';
+import { FormComponent } from './form/form.component';
+import { PhoneComponent } from './phone/phone.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AccordionModule.forRoot(),
+    SharedModule
   ],
   declarations: [
-    SizesComponent,
     FrameComponent,
     Button3dComponent,
     RaisedComponent,
@@ -28,8 +33,25 @@ import { TypeComponent } from './type/type.component';
     GroupComponent,
     BlockComponent,
     WrapperComponent,
-    FromComponent,
-    TypeComponent
+    TypeComponent,
+    ShapeComponent,
+    FormComponent,
+    PhoneComponent
+  ],
+  exports: [
+    FrameComponent,
+    Button3dComponent,
+    RaisedComponent,
+    LongshadowComponent,
+    GlowComponent,
+    DropdownComponent,
+    GroupComponent,
+    BlockComponent,
+    WrapperComponent,
+    TypeComponent,
+    ShapeComponent,
+    FormComponent,
+    PhoneComponent
   ]
 })
 export class ButtonsCssModule { }

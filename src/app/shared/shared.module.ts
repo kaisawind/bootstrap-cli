@@ -9,7 +9,7 @@ import { SampleboxComponent } from './samplebox/samplebox.component';
   imports: [
     CommonModule,
     FormsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
   ],
   declarations: [
     SampleboxComponent

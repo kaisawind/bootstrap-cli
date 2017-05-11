@@ -5,4 +5,10 @@ export const DOCS = {
   state: {
     html: require('!!raw-loader?lang=markup!./state/state.html')
   },
+  shape: {
+    html: require('!!raw-loader?lang=markup!./shape/shape.html')
+  },
+  frame: {
+    html: require('!!raw-loader?lang=markup!./frame/frame.html')
+  }
 };

@@ -1,3 +1,16 @@
-<p>
-  frame works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    带边框和不带边框的按钮
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  由 Font Awesome 开源的图标字体非常适合移动设备
+  <app-samplebox [html]="docs.frame.html">
+    <div class="l-center">
+      <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
+      <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
+      <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
+      <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
+    </div>
+  </app-samplebox>
+</accordion-group>

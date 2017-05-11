@@ -1,0 +1,86 @@
+.phone {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 3;
+    height: 800px;
+    width: 440px;
+    background: url(/assets/images/iphone-6.png) top left no-repeat;
+}
+
+.phone .phone-screen {
+    position: absolute;
+    width: 300px;
+    height: 538px;
+    top: 130px;
+    left: 70px;
+    z-index: 2;
+    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%);
+}
+
+.phone .phone-status-bar {
+    background: url(/assets/images/iphone-status-bar.png) top left no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    z-index: 1;
+}
+
+.phone .phone-header {
+    padding: 20px 0 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 44px;
+}
+
+.phone .phone-header > .h3 {
+    font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 44px;
+    color: #FFFFFF;
+    font-size: 1.17em;
+}
+
+.phone .phone-header .button-left, .phone .phone-header .button-right {
+    position: absolute;
+    z-index: 1;
+}
+
+.phone .phone-header .button-left {
+    left: 0;
+    top: 25px;
+}
+
+.phone .phone-header .button-right {
+    right: 0;
+    top: 22px;
+}
+
+.phone .phone-body {
+    padding: 10px;
+}
+
+.l-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone-body .button {
+    margin: 5px;
+}
+
+.phone .phone-footer {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
