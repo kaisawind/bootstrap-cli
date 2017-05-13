@@ -1,3 +1,28 @@
-<p>
-  wrapper works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    额外的环绕效果
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  为按钮周围增加额外视觉效果能够突出按钮
+  <app-samplebox [html]="docs.wrapper.html">
+    <span class="button-wrap">
+      <button class="button button-circle">
+        <i class="fa fa-cloud"></i>
+      </button>
+    </span>
+
+    <span class="button-wrap">
+      <button class="button button-circle button-raised button-primary">
+        <i class="fa fa-cloud"></i>
+      </button>
+    </span>
+
+    <span class="button-wrap">
+      <a href="http://www.bootcss.com/" class="button button-pill ">Go</a>
+    </span>
+    <span class="button-wrap">
+      <a href="http://www.bootcss.com/" class="button button-pill button-raised button-primary">Go</a>
+    </span>
+  </app-samplebox>
+</accordion-group>

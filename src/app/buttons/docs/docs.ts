@@ -31,5 +31,8 @@ export const DOCS = {
   },
   block: {
     html: require('!!raw-loader?lang=markup!./block/block.html')
+  },
+  wrapper: {
+    html: require('!!raw-loader?lang=markup!./wrapper/wrapper.html')
   }
 };
