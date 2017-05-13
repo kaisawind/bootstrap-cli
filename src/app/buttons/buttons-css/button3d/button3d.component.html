@@ -1,3 +1,16 @@
-<p>
-  button3d works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    3D 按钮
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  模仿现实世界中的按钮外观
+  <app-samplebox [html]="docs.button3d.html">
+    <button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+    <a href="http://www.bootcss.com/" class="button button-3d button-primary button-rounded">Check out the new site!</a>
+    <a href="http://www.bootcss.com/" class="button button-3d button-action button-pill">Visit Us!</a>
+    <button class="button button-3d button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+    <a href="http://www.bootcss.com/" class="button button-3d button-caution"><i class="fa fa-camera"></i> Go</a>
+    <a href="http://www.bootcss.com/" class="button button-3d button-royal">Say Hi!</a>
+  </app-samplebox>
+</accordion-group>

@@ -10,5 +10,8 @@ export const DOCS = {
   },
   frame: {
     html: require('!!raw-loader?lang=markup!./frame/frame.html')
+  },
+  button3d: {
+    html: require('!!raw-loader?lang=markup!./button3d/button3d.html')
   }
 };
