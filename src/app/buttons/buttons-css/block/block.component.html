@@ -1,3 +1,16 @@
-<p>
-  block works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    堆叠按钮
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  block 级别的按钮会占据最大宽度
+  <app-samplebox [html]="docs.block.html">
+    <a href=# class="button button-block button-rounded button-large">Go</a>
+    <a href=# class="button button-block button-rounded button-primary button-large">Go</a>
+    <a href=# class="button button-block button-rounded button-action button-large">Go</a>
+    <a href=# class="button button-block button-rounded button-highlight button-large">Go</a>
+    <a href=# class="button button-block button-rounded button-caution button-large">Go</a>
+    <a href=# class="button button-block button-rounded button-royal button-large">Go</a>
+  </app-samplebox>
+</accordion-group>

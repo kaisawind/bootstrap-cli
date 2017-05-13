@@ -25,5 +25,11 @@ export const DOCS = {
   },
   dropdown: {
     html: require('!!raw-loader?lang=markup!./dropdown/dropdown.html')
+  },
+  group: {
+    html: require('!!raw-loader?lang=markup!./group/group.html')
+  },
+  block: {
+    html: require('!!raw-loader?lang=markup!./block/block.html')
   }
 };
