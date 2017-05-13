@@ -19,5 +19,8 @@ export const DOCS = {
   },
   longshadow: {
     html: require('!!raw-loader?lang=markup!./longshadow/longshadow.html')
+  },
+  glow: {
+    html: require('!!raw-loader?lang=markup!./glow/glow.html')
   }
 };
