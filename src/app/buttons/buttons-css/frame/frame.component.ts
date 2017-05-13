@@ -10,10 +10,15 @@ import { DOCS } from '../../docs/docs';
 export class FrameComponent implements OnInit {
 
   public docs: any = DOCS;
+  public isShow = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showPhone() {
+    this.isShow = !this.isShow;
   }
 
 }

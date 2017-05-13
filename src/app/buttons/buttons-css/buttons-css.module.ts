@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionModule } from 'ngx-bootstrap';
+import { AccordionModule, TooltipModule } from 'ngx-bootstrap';
 
 import { SharedModule } from '../../shared/shared.module';
 import { FrameComponent } from './frame/frame.component';
@@ -15,12 +15,13 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { TypeComponent } from './type/type.component';
 import { ShapeComponent } from './shape/shape.component';
 import { FormComponent } from './form/form.component';
-import { PhoneComponent } from './phone/phone.component';
+import { PhoneButtonComponent } from './phone-button/phone-button.component';
 
 @NgModule({
   imports: [
     CommonModule,
     AccordionModule.forRoot(),
+    TooltipModule.forRoot(),
     SharedModule
   ],
   declarations: [
@@ -36,7 +37,7 @@ import { PhoneComponent } from './phone/phone.component';
     TypeComponent,
     ShapeComponent,
     FormComponent,
-    PhoneComponent
+    PhoneButtonComponent
   ],
   exports: [
     FrameComponent,
@@ -51,7 +52,7 @@ import { PhoneComponent } from './phone/phone.component';
     TypeComponent,
     ShapeComponent,
     FormComponent,
-    PhoneComponent
+    PhoneButtonComponent
   ]
 })
 export class ButtonsCssModule { }

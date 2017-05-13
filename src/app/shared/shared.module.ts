@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsModule } from 'ngx-bootstrap';
 
 import { SampleboxComponent } from './samplebox/samplebox.component';
+import { PhoneComponent} from './phone/phone.component';
 
 @NgModule({
   imports: [
@@ -12,11 +13,13 @@ import { SampleboxComponent } from './samplebox/samplebox.component';
     TabsModule.forRoot(),
   ],
   declarations: [
-    SampleboxComponent
+    SampleboxComponent,
+    PhoneComponent
   ],
   exports: [
     FormsModule,
-    SampleboxComponent
+    SampleboxComponent,
+    PhoneComponent
   ]
 })
 export class SharedModule { }

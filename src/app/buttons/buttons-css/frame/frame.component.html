@@ -6,11 +6,8 @@
   </div>
   由 Font Awesome 开源的图标字体非常适合移动设备
   <app-samplebox [html]="docs.frame.html">
-    <div class="l-center">
-      <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
-      <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
-      <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
-      <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
-    </div>
+    <button type="button" class="button button-action button-rounded" (click)="showPhone()" [tooltip]="isShow ? '隐藏实例' : '显示实例'">{{isShow ? 'Hide Phone' : 'Show Phone'}}</button>
   </app-samplebox>
 </accordion-group>
+
+<app-phone-button *ngIf="isShow && group?.isOpen"></app-phone-button>

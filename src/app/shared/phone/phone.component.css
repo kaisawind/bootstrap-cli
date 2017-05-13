@@ -30,6 +30,7 @@
 
 .phone .phone-header {
     padding: 20px 0 0 0;
+    background: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     text-align: center;
     line-height: 44px;
@@ -71,12 +72,9 @@
     margin-right: auto;
 }
 
-.phone-body .button {
-    margin: 5px;
-}
-
 .phone .phone-footer {
     padding: 10px 20px;
+    background: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     position: absolute;
     left: 0;
