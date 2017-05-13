@@ -16,5 +16,8 @@ export const DOCS = {
   },
   raised: {
     html: require('!!raw-loader?lang=markup!./raised/raised.html')
+  },
+  longshadow: {
+    html: require('!!raw-loader?lang=markup!./longshadow/longshadow.html')
   }
 };
