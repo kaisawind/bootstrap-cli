@@ -1,3 +1,15 @@
-<p>
-  raised works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    突起样式的按钮
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  经典的按钮外观
+  <app-samplebox [html]="docs.raised.html">
+    <a href=# class="button button-raised button-primary button-pill">Visit Us!</a>
+    <button class="button button-raised button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+    <a href=# class="button button-raised button-caution"><i class="fa fa-camera"></i> Go</a>
+    <a href=# class="button button-raised button-royal">Say Hi!</a>
+    <a href=# class="button button-raised button-pill button-inverse">Say Hi!</a>
+  </app-samplebox>
+</accordion-group>

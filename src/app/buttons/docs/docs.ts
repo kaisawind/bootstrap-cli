@@ -13,5 +13,8 @@ export const DOCS = {
   },
   button3d: {
     html: require('!!raw-loader?lang=markup!./button3d/button3d.html')
+  },
+  raised: {
+    html: require('!!raw-loader?lang=markup!./raised/raised.html')
   }
 };
