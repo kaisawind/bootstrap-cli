@@ -1,3 +1,84 @@
-<p>
-  dropdown works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    带下拉菜单的按钮
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  当按钮被点击时会出现一个下拉菜单
+  <app-samplebox [html]="docs.dropdown.html">
+    <span class="button-dropdown" data-buttons="dropdown">
+      <button class="button button-rounded">
+        Select Me <i class="fa fa-caret-down"></i>
+      </button>
+
+      <ul class="button-dropdown-list">
+        <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+        <li><a href="http://www.bootcss.com/">Option Link 2</a></li>
+        <li class="button-dropdown-divider">
+          <a href="#">Option Link 3</a>
+        </li>
+      </ul>
+    </span>
+
+    <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+      <button class="button button-primary button-large">
+        <i class="fa fa-bars"></i> Select Me
+      </button>
+
+      <ul class="button-dropdown-list is-below">
+        <li><a href="http://www.bootcss.com/"><i class="fa fa-heart-o"></i> Option Link 1</a></li>
+        <li><a href="http://www.bootcss.com/">Option Link 2</a></li>
+        <li class="button-dropdown-divider">
+          <a href="#">Option Link 3</a>
+        </li>
+      </ul>
+    </span>
+
+
+    <span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
+      <button class="button button-action">
+        Select Me <i class="fa fa-caret-up"></i>
+      </button>
+
+      <ul class="button-dropdown-list is-above">
+        <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+        <li><a href="http://www.bootcss.com/">Option Link 2</a></li>
+        <li class="button-dropdown-divider">
+          <a href="#">Option Link 3</a>
+        </li>
+      </ul>
+    </span>
+
+    <span class="button-dropdown button-dropdown-plain" data-buttons="dropdown">
+      <button class="button button-caution button-pill">
+        Select Me <i class="fa fa-caret-down"></i>
+      </button>
+
+      <ul class="button-dropdown-list">
+        <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+        <li class="button-dropdown-divider">
+          <a href="http://www.bootcss.com/">Option Link 2</a>
+        </li>
+        <li>
+          <a href="#">Option Link 3</a>
+        </li>
+      </ul>
+    </span>
+
+    <span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
+      <a href="#" class="button button-inverse">
+          <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
+      </a>
+
+      <ul class="button-dropdown-list is-below">
+        <li><a href="http://www.bootcss.com/">Option Link 1</a></li>
+        <li class="button-dropdown-divider">
+          <a href="http://www.bootcss.com/">Option Link 2</a>
+        </li>
+        <li>
+          <a href="#">Option Link 3</a>
+        </li>
+      </ul>
+    </span>
+  </app-samplebox>
+</accordion-group>

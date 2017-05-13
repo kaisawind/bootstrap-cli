@@ -22,5 +22,8 @@ export const DOCS = {
   },
   glow: {
     html: require('!!raw-loader?lang=markup!./glow/glow.html')
+  },
+  dropdown: {
+    html: require('!!raw-loader?lang=markup!./dropdown/dropdown.html')
   }
 };
