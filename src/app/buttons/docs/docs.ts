@@ -40,5 +40,7 @@ export const DOCS = {
   },
   type: {
     html: require('!!raw-loader?lang=markup!./type/type.html')
-  }
+  },
+  usagebuttons: require('html-loader!markdown-loader!./usage/buttons.md'),
+  usagebootstrap: require('html-loader!markdown-loader!./usage/bootstrap.md')
 };

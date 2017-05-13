@@ -1,0 +1,9 @@
+<accordion-group #group>
+  <div accordion-heading>
+    安装与设置
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  Buttons 是一个高度可定制的、免费并且开源的按钮 CSS 样式库。
+  <p [innerHtml]="docs.usagebuttons"></p>
+</accordion-group>

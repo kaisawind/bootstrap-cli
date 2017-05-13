@@ -16,6 +16,7 @@ import { TypeComponent } from './type/type.component';
 import { ShapeComponent } from './shape/shape.component';
 import { FormComponent } from './form/form.component';
 import { PhoneButtonComponent } from './phone-button/phone-button.component';
+import { UsageButtonsComponent } from './usage-buttons/usage-buttons.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { PhoneButtonComponent } from './phone-button/phone-button.component';
     TypeComponent,
     ShapeComponent,
     FormComponent,
-    PhoneButtonComponent
+    PhoneButtonComponent,
+    UsageButtonsComponent
   ],
   exports: [
     FrameComponent,
@@ -52,7 +54,8 @@ import { PhoneButtonComponent } from './phone-button/phone-button.component';
     TypeComponent,
     ShapeComponent,
     FormComponent,
-    PhoneButtonComponent
+    PhoneButtonComponent,
+    UsageButtonsComponent
   ]
 })
 export class ButtonsCssModule { }

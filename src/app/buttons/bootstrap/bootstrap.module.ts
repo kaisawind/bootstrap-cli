@@ -7,6 +7,7 @@ import { OptionsComponent } from './options/options.component';
 import { TypesComponent } from './types/types.component';
 import { SizesComponent } from './sizes/sizes.component';
 import { StateComponent } from './state/state.component';
+import { UsageBootstrapComponent } from './usage-bootstrap/usage-bootstrap.component';
 
 @NgModule({
   imports: [
@@ -18,13 +19,15 @@ import { StateComponent } from './state/state.component';
     OptionsComponent,
     TypesComponent,
     SizesComponent,
-    StateComponent
+    StateComponent,
+    UsageBootstrapComponent
   ],
   exports: [
     OptionsComponent,
     TypesComponent,
     SizesComponent,
-    StateComponent
+    StateComponent,
+    UsageBootstrapComponent
   ]
 })
 export class BootstrapModule { }
