@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "assets/css/prettify-angulario.css",
         "assets/css/buttons.css",
@@ -27,6 +28,7 @@
       ],
       "scripts": [
         "../node_modules/google-code-prettify/bin/prettify.min.js",
+        "../node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js",
         "../node_modules/jquery/dist/jquery.min.js",
         "assets/js/buttons.js"
       ],

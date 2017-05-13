@@ -32,6 +32,7 @@
     "@types/jasmine": "^2.5.47",
     "@types/node": "~6.0.60",
     "@types/webpack": "^2.2.15",
+    "bootstrap-switch": "^3.3.4",
     "codelyzer": "~2.0.0",
     "font-awesome": "^4.7.0",
     "google-code-prettify": "^1.0.5",

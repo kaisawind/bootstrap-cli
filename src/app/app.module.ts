@@ -11,6 +11,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { HtmlModule } from './html/html.module';
+import { SwitchModule } from './switch/switch.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HtmlModule } from './html/html.module';
     SharedModule,
     CoreModule,
     HtmlModule,
+    SwitchModule,
     routing
   ],
   providers: [],
