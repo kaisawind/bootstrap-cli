@@ -1,3 +1,14 @@
-<p>
-  type works!
-</p>
+<accordion-group #group>
+  <div accordion-heading>
+    各种文字样式
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  按钮中的文本可以有多种样式
+  <app-samplebox [html]="docs.type.html">    
+    <a href="http://www.bootcss.com/" class="button button-uppercase button-primary">uppercase</a>
+    <a href="http://www.bootcss.com/" class="button button-lowercase button-primary ">lowercase</a>
+    <a href="http://www.bootcss.com/" class="button button-capitalize button-primary">capitalize</a>
+    <a href="http://www.bootcss.com/" class="button button-small-caps button-primary">small caps</a>
+  </app-samplebox>
+</accordion-group>

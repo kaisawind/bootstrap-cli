@@ -34,5 +34,11 @@ export const DOCS = {
   },
   wrapper: {
     html: require('!!raw-loader?lang=markup!./wrapper/wrapper.html')
+  },
+  form: {
+    html: require('!!raw-loader?lang=markup!./form/form.html')
+  },
+  type: {
+    html: require('!!raw-loader?lang=markup!./type/type.html')
   }
 };
