@@ -5,7 +5,7 @@
     z-index: 3;
     height: 800px;
     width: 440px;
-    background: url(../../../assets/images/iphone-6.png) top left no-repeat;
+    background: url(/assets/images/iphone-6.png) top left no-repeat;
 }
 
 .phone .phone-screen {
@@ -20,7 +20,7 @@
 
 .phone .phone-status-bar {
     /*background: url(/assets/images/iphone-status-bar.png) top left no-repeat;*/
-    background: url(../../../assets/images/iphone-status-bar.png) top left no-repeat;
+    background: url(/assets/images/iphone-status-bar.png) top left no-repeat;
     position: absolute;
     top: 0;
     left: 0;
