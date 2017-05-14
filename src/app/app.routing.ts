@@ -21,6 +21,10 @@ export const routes: Routes = [
     loadChildren: 'app/buttons/buttons.module#ButtonsModule'
   },
   {
+    path: 'switch',
+    loadChildren: 'app/switch/switch.module#SwitchModule'
+  },
+  {
     path: 'sidebar',
     loadChildren: 'app/sidebar/sidebar.module#SidebarModule'
   },

@@ -27,8 +27,9 @@
         "styles.css"
       ],
       "scripts": [
-        "../node_modules/google-code-prettify/bin/prettify.min.js",
         "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/google-code-prettify/bin/prettify.min.js",
+        "../node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js",
         "assets/js/buttons.js"
       ],
       "environmentSource": "environments/environment.ts",
