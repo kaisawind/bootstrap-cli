@@ -1,0 +1,28 @@
+<accordion-group #group>
+  <div accordion-heading>
+    颜色（Colors）
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  <app-samplebox [html]="docs.colors.html" [ts]="docs.colors.component">
+    <div class="bootstrap-switch" data-on="primary" data-off="info">
+      <input type="checkbox" checked name="colors-switch-primary"/>
+    </div>
+
+    <div class="bootstrap-switch" data-on="info" data-off="success">
+      <input type="checkbox" checked name="colors-switch-info"/>
+    </div>
+
+    <div class="bootstrap-switch" data-on="success" data-off="warning">
+      <input type="checkbox" checked name="colors-switch-success"/>
+    </div>
+
+    <div class="bootstrap-switch" data-on="warning" data-off="danger">
+      <input type="checkbox" checked name="colors-switch-warning"/>
+    </div>
+
+    <div class="bootstrap-switch" data-on="danger" data-off="primary">
+      <input type="checkbox" checked name="colors-switch-danger"/>
+    </div>
+  </app-samplebox>
+</accordion-group>

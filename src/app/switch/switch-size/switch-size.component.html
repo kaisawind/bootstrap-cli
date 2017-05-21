@@ -1,0 +1,24 @@
+<accordion-group #group>
+  <div accordion-heading>
+    尺寸（Size）
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  <app-samplebox [html]="docs.size.html" [ts]="docs.size.component">
+    <div class="bootstrap-switch bootstrap-switch-large">
+      <input type="checkbox" checked name="size-switch-large"/>
+    </div>
+
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="size-switch"/>
+    </div>
+
+    <div class="bootstrap-switch bootstrap-switch-small">
+      <input type="checkbox" checked name="size-switch-small"/>
+    </div>
+
+    <div class="bootstrap-switch bootstrap-switch-mini">
+      <input type="checkbox" checked name="size-switch-mini"/>
+    </div>
+  </app-samplebox>
+</accordion-group>

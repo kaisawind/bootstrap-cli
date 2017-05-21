@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DOCS } from './docs/docs';
+import { DOCS } from '../docs/docs';
 
 @Component({
-  selector: 'app-switch',
-  templateUrl: './switch.component.html',
-  styleUrls: ['./switch.component.css']
+  selector: 'app-switch-size',
+  templateUrl: './switch-size.component.html',
+  styleUrls: ['./switch-size.component.css']
 })
-export class SwitchComponent implements OnInit {
+export class SwitchSizeComponent implements OnInit {
 
   docs: any = DOCS;
 
