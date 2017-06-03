@@ -5,24 +5,24 @@
        [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
   </div>
   <app-samplebox [html]="docs.colors.html" [ts]="docs.colors.component">
-    <div class="bootstrap-switch" data-on="primary" data-off="info">
-      <input type="checkbox" checked name="colors-switch-primary"/>
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="colors-switch-primary" data-off-color="info"/>
     </div>
 
-    <div class="bootstrap-switch" data-on="info" data-off="success">
-      <input type="checkbox" checked name="colors-switch-info"/>
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="colors-switch-info"  data-off-color="success"/>
     </div>
 
-    <div class="bootstrap-switch" data-on="success" data-off="warning">
-      <input type="checkbox" checked name="colors-switch-success"/>
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="colors-switch-success" data-off-color="warning"/>
     </div>
 
-    <div class="bootstrap-switch" data-on="warning" data-off="danger">
-      <input type="checkbox" checked name="colors-switch-warning"/>
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="colors-switch-warning" data-off-color="danger"/>
     </div>
 
-    <div class="bootstrap-switch" data-on="danger" data-off="primary">
-      <input type="checkbox" checked name="colors-switch-danger"/>
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="colors-switch-danger" data-off-color="primary"/>
     </div>
   </app-samplebox>
 </accordion-group>

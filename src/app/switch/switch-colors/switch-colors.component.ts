@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import { DOCS } from '../docs/docs';
 
@@ -7,18 +7,21 @@ import { DOCS } from '../docs/docs';
   templateUrl: './switch-colors.component.html',
   styleUrls: ['./switch-colors.component.css']
 })
-export class SwitchColorsComponent implements OnInit {
+export class SwitchColorsComponent implements OnInit, AfterViewInit {
 
   docs: any = DOCS;
 
   constructor() { }
 
   ngOnInit() {
-    $('[name=\'colors-switch-primary\']').bootstrapSwitch();
-    $('[name=\'colors-switch-info\']').bootstrapSwitch();
-    $('[name=\'colors-switch-success\']').bootstrapSwitch();
-    $('[name=\'colors-switch-warning\']').bootstrapSwitch();
-    $('[name=\'colors-switch-danger\']').bootstrapSwitch();
+  }
+
+  ngAfterViewInit() {
+    $('[name=\'colors-switch-primary\']').bootstrapSwitch('onColor', 'primary');
+    $('[name=\'colors-switch-info\']').bootstrapSwitch('onColor', 'info');
+    $('[name=\'colors-switch-success\']').bootstrapSwitch('onColor', 'success');
+    $('[name=\'colors-switch-warning\']').bootstrapSwitch('onColor', 'warning');
+    $('[name=\'colors-switch-danger\']').bootstrapSwitch('onColor', 'danger');
   }
 
 }

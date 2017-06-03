@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import { DOCS } from '../docs/docs';
 
@@ -7,13 +7,16 @@ import { DOCS } from '../docs/docs';
   templateUrl: './switch-size.component.html',
   styleUrls: ['./switch-size.component.css']
 })
-export class SwitchSizeComponent implements OnInit {
+export class SwitchSizeComponent implements OnInit, AfterViewInit {
 
   docs: any = DOCS;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
     $('[name=\'size-switch-large\']').bootstrapSwitch();
     $('[name=\'size-switch\']').bootstrapSwitch();
     $('[name=\'size-switch-small\']').bootstrapSwitch();
