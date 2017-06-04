@@ -8,6 +8,9 @@ import { SwitchComponent } from './switch.component';
 import { routing } from './switch.routing';
 import { SwitchSizeComponent } from './switch-size/switch-size.component';
 import { SwitchColorsComponent } from './switch-colors/switch-colors.component';
+import { SwitchAnimationComponent } from './switch-animation/switch-animation.component';
+import { SwitchDisabledComponent } from './switch-disabled/switch-disabled.component';
+import { SwitchTextComponent } from './switch-text/switch-text.component';
 
 @NgModule({
   imports: [
@@ -19,7 +22,10 @@ import { SwitchColorsComponent } from './switch-colors/switch-colors.component';
   declarations: [
     SwitchComponent,
     SwitchSizeComponent,
-    SwitchColorsComponent
+    SwitchColorsComponent,
+    SwitchAnimationComponent,
+    SwitchDisabledComponent,
+    SwitchTextComponent
   ]
 })
 export class SwitchModule { }

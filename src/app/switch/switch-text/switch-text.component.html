@@ -1,0 +1,16 @@
+<accordion-group #group>
+  <div accordion-heading>
+    文本（Text）
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  <app-samplebox [html]="docs.text.html" [ts]="docs.text.component">
+    <div class="bootstrap-switch">
+     <input type="checkbox" checked name="text-switch"/>
+    </div>
+
+    <div class="bootstrap-switch">
+     <input type="checkbox" checked name="text-switch-fontawesome"/>
+    </div>
+  </app-samplebox>
+</accordion-group>

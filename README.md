@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
 
+[![Build Status](https://www.travis-ci.org/kaisawind/bootstrap-cli.svg?branch=master)](https://www.travis-ci.org/kaisawind/bootstrap-cli)
+[![Dependency Status](https://david-dm.org/kaisawind/bootstrap-cli.svg)](https://david-dm.org/kaisawind/bootstrap-cli)
+[![devDependency Status](https://david-dm.org/kaisawind/bootstrap-cli/dev-status.svg)](https://david-dm.org/kaisawind/bootstrap-cli?type=dev)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

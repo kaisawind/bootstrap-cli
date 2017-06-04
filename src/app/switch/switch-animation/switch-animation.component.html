@@ -1,0 +1,16 @@
+<accordion-group #group>
+  <div accordion-heading>
+    动画（Animation）
+    <i class="pull-right float-xs-right glyphicon"
+       [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+  </div>
+  <app-samplebox [html]="docs.animation.html" [ts]="docs.animation.component">
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="animation-switch-false" data-animate="false"/>
+    </div>
+
+    <div class="bootstrap-switch">
+      <input type="checkbox" checked name="animation-switch-true" data-animate="true"/>
+    </div>
+  </app-samplebox>
+</accordion-group>
