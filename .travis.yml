@@ -20,9 +20,9 @@ matrix:
     - node_js: "6"
       os: linux
       env: SCRIPT=build
-    - node_js: "6"
-      os: linux
-      env: SCRIPT=test
+    #- node_js: "6"
+    #  os: linux
+    #  env: SCRIPT=test
 
 before_install:
   # Use a virtual display.
