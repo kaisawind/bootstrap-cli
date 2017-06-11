@@ -12,6 +12,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { HtmlModule } from './html/html.module';
 import { SwitchModule } from './switch/switch.module';
+import { AnimationModule } from './animation/animation.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SwitchModule } from './switch/switch.module';
     CoreModule,
     HtmlModule,
     SwitchModule,
+    AnimationModule,
     routing
   ],
   providers: [],

@@ -33,6 +33,10 @@ export const routes: Routes = [
     loadChildren: 'app/html/html.module#HtmlModule'
   },
   {
+    path: 'animation.css',
+    loadChildren: 'app/animation/animation.module#AnimationModule'
+  },
+  {
     path: '**',
     redirectTo: '/'
   }
